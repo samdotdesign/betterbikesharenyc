@@ -1,7 +1,3 @@
-html {
-  height: 100%;
-  width: 100%;
-}
 
 body {
   font-family: "roc-grotesk", Arial, sans-serif;
@@ -11,18 +7,19 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background: #2E4EFF;
+  padding-bottom: 48px;
 }
 
 .container {
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
+  margin: auto;
+  color: #ffffffd4;
 }
+
 
 .header {
   text-align: center;
@@ -30,6 +27,7 @@ body {
 
 .header img {
   width: 350px;
+  margin-top: 32px;
   margin-bottom: 48px;
 }
 
@@ -37,7 +35,7 @@ body {
   display: flex;
   background: #ffffff;
   color: #000000;
-  padding: 16px 22px;
+  padding: 14px 22px;
   width: fit-content; /* Adjust width to fit content */
   min-height: 48px;
   text-decoration: none;
@@ -49,6 +47,8 @@ body {
   align-items: center; /* Center align content */
   margin-left: auto; /* Center align horizontally */
   margin-right: auto; /* Center align horizontally */
+  margin-bottom: 48px;
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
 .button-text {
@@ -62,11 +62,82 @@ body {
   vertical-align: middle;
 }
 
+.campaign-info {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 24px;
+  padding-top: 10px;
+  padding-bottom: 22px;
+  margin-bottom: 32px;
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.us {
+  color: rgb(255, 255, 255);
+  background-color: #00000077;
+  padding: 32px;
+  border-radius: 24px;
+  padding-top: 10px;
+  padding-bottom: 22px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-top: 16px;
+}
+
+h3 {
+  font-size: 20px !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: -12px;
+}
+
+strong {
+  font-weight: 600;/
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  line-height: 1.25;
+
+}
+
+/* Bullet controls for top-level unordered list */
+ul {
+  list-style-type: disc;
+  padding-left: 14px;
+}
+
+/* Bullet controls for nested unordered lists */
+ul ul {
+  list-style-type: circle;
+  padding-left: 16px;
+  list-style-type: square; 
+}
+
+/* Margin for list items */
+ul li {
+  margin-bottom: 8px; /* Adjust this value as needed */
+}
+
 @media (max-width: 600px) {
   .header img {
     width: 75%;
   }
-  .links a {
-    padding: 22px;
-  }
+
 }
