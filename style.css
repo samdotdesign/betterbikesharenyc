@@ -79,6 +79,7 @@ a:visited {
   margin-bottom: 48px;
   box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
   animation: pulse 2s infinite;
+  scale: 1.15;
 }
 
 .button-text {
