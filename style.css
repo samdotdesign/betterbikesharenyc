@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
   padding: 20px;
   margin: auto;
-  color: #ffffffd4;
+  color: #ffffff;
 }
 
 
@@ -30,6 +30,36 @@ body {
   margin-top: 32px;
   margin-bottom: 48px;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+a {
+  color: #2E4EFF;
+  font-weight: 500;
+  text-decoration-line: underline; 
+  text-decoration-color: #2e4dff35; 
+  text-decoration-thickness: 2px; 
+}
+
+a:hover {
+  color: #ed2c8d; 
+  text-decoration-color: #ed2c8c81;
+}
+
+a:visited {
+  color: #2E4EFF; 
+}
+
 
 .links a {
   display: flex;
@@ -49,6 +79,7 @@ body {
   margin-right: auto; /* Center align horizontally */
   margin-bottom: 48px;
   box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+  animation: pulse 2s infinite;
 }
 
 .button-text {
@@ -68,19 +99,19 @@ body {
   padding: 32px;
   border-radius: 24px;
   padding-top: 10px;
-  padding-bottom: 22px;
-  margin-bottom: 32px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
   box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
-.us {
+.about {
   color: rgb(255, 255, 255);
   background-color: #00000077;
   padding: 32px;
   border-radius: 24px;
-  padding-top: 10px;
+  padding-top: 28px;
   padding-bottom: 22px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 h1 {
@@ -96,17 +127,18 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.2px;
   margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 h3 {
   font-size: 20px !important;
   font-weight: 600;
   letter-spacing: 0.5px;
-  margin-bottom: -12px;
+  margin-bottom: -2px;
 }
 
 strong {
-  font-weight: 600;/
+  font-weight: 600;
 }
 
 p {
@@ -114,13 +146,100 @@ p {
   line-height: 28px;
   margin-bottom: 8px;
   line-height: 1.25;
+  margin: 0px;
 
+}
+
+.faq-item:first-child {
+  border-radius: 24px 24px 8px 8px;
+}
+
+.faq-item:last-child {
+  border-radius: 8px 8px 24px 24px;
+  margin-bottom: 24px;
+}
+
+.faq-item {
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  padding: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  border-radius: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #ffffff; /* match the background color of the campaign info div */
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.faq-question .chevron-icon {
+  height: px;
+  width: 20px;
+  flex-shrink: 0;
+  margin-left: 12px;
+  /* additional styles as needed */
+}
+
+.faq-question.active .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  max-height: 0;
+  color: #000000;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+  border-radius: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 28px;
+  line-height: 1.25;
+  padding: 0px;
+}
+
+.faq-question.active + .faq-answer {
+  opacity: 1;
+  transform: scaleY(1);
+  max-height: 1000px; /* adjust this value as needed */
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-top: -24px;
 }
 
 /* Bullet controls for top-level unordered list */
 ul {
   list-style-type: disc;
-  padding-left: 14px;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  margin-top: 8px;
 }
 
 /* Bullet controls for nested unordered lists */
