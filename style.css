@@ -310,6 +310,10 @@ ul li {
 }
 
 @media (max-width: 600px) {
+  .body {
+    overflow-x: hidden;
+  }
+ 
   .header img {
     width: 75%;
   }
