@@ -71,10 +71,33 @@ a:hover {
   align-items: center; /* Center align content */
   margin-left: auto; /* Center align horizontally */
   margin-right: auto; /* Center align horizontally */
-  margin-bottom: 48px;
-  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+  margin-bottom: 24px;
   animation: pulse 2s infinite;
   scale: 1.15;
+  cursor: pointer;
+}
+
+.sublink a {
+  display: flex;
+  background: #ffffff00;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  letter-spacing: 0.5px;;
+  padding: 14px 22px;
+  width: fit-content; /* Adjust width to fit content */
+  min-height: 48px;
+  text-decoration: none;
+  border-radius: 64px;
+  box-sizing: border-box; /* Include padding in width */
+  margin-bottom: 16px;
+  font-weight: 600;
+  justify-content: center; /* Center align content */
+  align-items: center; /* Center align content */
+  margin-left: auto; /* Center align horizontally */
+  margin-right: auto; /* Center align horizontally */
+  margin-bottom: 48px;
+  scale: 1;
+  cursor: pointer;
 }
 
 .button-text {
@@ -96,7 +119,6 @@ a:hover {
   padding-top: 10px;
   padding-bottom: 24px;
   margin-bottom: 24px;
-  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
 .tiles {
@@ -307,6 +329,15 @@ ul li {
 .footer {
   display: flex;
   justify-content: center;
+}
+
+.logo-blocker {
+  background-color: #2E4EFF;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
 }
 
 @media (max-width: 600px) {
