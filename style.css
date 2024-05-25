@@ -318,26 +318,21 @@ ul li {
     width: 75%;
   }
 
-
-.report-wrapper {
-  overflow-wrap: hidden;
-}
-
 .report {
   padding-right: 32px;
 }
 
 .report h2 {
   font-size: 24px;
-  width: 80%;
+  width: 74%;
 }
 
 .report-image {
   position: absolute;
   width: 150px;
   height: 150px;
-  top: -15px;
-  right: -30px;
+  top: -19px;
+  right: 0px;
 }
 
 }
