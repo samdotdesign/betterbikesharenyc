@@ -318,6 +318,11 @@ ul li {
     width: 75%;
   }
 
+
+.report-wrapper {
+  overflow-wrap: hidden;
+}
+
 .report {
   padding-right: 32px;
 }
@@ -328,6 +333,7 @@ ul li {
 }
 
 .report-image {
+  position: absolute;
   width: 150px;
   height: 150px;
   top: -15px;
