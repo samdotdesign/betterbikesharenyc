@@ -127,7 +127,14 @@ a:hover {
 .tiles {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px; /* Adjust as needed */
+  gap: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.tiles h3 {
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .tile-item {
@@ -142,8 +149,6 @@ a:hover {
   border-radius: 24px;
   padding-top: 10px;
   padding-bottom: 24px;
-  margin-bottom: 24px;
-  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
 
@@ -332,15 +337,6 @@ ul li {
 .footer {
   display: flex;
   justify-content: center;
-}
-
-.logo-blocker {
-  background-color: #2E4EFF;
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  z-index: 9999;
 }
 
 @media (max-width: 600px) {
