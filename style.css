@@ -126,10 +126,10 @@ a:hover {
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0px;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .tiles h3 {
@@ -139,13 +139,12 @@ a:hover {
 
 .tile-item {
   /* Styles for each grid item */
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
-  padding: 32px;
+  color: rgb(255, 255, 255);
+/*   background-color: #00000077; */
+  padding: 16px;
   border-radius: 24px;
   padding-top: 10px;
   padding-bottom: 24px;
@@ -196,7 +195,7 @@ h1 {
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 16px;
-  line-height: 40px;
+  line-height: 35px;
   letter-spacing: 0.2px;
 }
 
@@ -337,6 +336,32 @@ ul li {
 .footer {
   display: flex;
   justify-content: center;
+}
+
+
+.bike {
+}
+
+.bike.animate {
+  animation: bike-ride 2s ease;
+}
+
+@keyframes bike-ride {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  50.01% {
+    transform: translateX(-100vw);
+  }
+  51% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 600px) {

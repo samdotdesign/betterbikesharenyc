@@ -14,3 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+window.onscroll = function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      document.querySelector('.bike').classList.add('animate');
+    }
+  };
+
+  var bike = document.querySelector('.bike');
+
+bike.addEventListener('click', function() {
+  bike.classList.remove('animate');
+  void bike.offsetHeight;
+  
+  setTimeout(function() {
+    bike.classList.add('animate');
+  }, 10); // Short delay to allow the browser to recognize the class removal before adding it back
+});
