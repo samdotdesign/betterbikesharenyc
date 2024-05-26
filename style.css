@@ -340,6 +340,7 @@ ul li {
 
 
 .bike {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .bike.animate {
