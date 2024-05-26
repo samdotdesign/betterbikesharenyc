@@ -15,8 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 window.onscroll = function() {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      document.querySelector('.bike').classList.add('animate');
+    var scrollBarHeight = window.innerHeight - document.documentElement.clientHeight;
+    var bike = document.querySelector('.bike');
+  
+    if ((window.innerHeight + window.scrollY - scrollBarHeight) >= document.body.offsetHeight) {
+      bike.classList.remove('animate');
+      void bike.offsetHeight; // Trigger reflow to restart animation
+  
+      setTimeout(function() {
+        bike.classList.add('animate');
+      }, 10); // Short delay to allow the browser to recognize the class removal before adding it back
     }
   };
 
