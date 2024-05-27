@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 window.onscroll = function() {
     var scrollBarHeight = window.innerHeight - document.documentElement.clientHeight;
     var bike = document.querySelector('.bike');
+    var triggerPoint = document.body.offsetHeight - 100; // Adjust this value to change when the animation is triggered
   
     if ((window.innerHeight + window.scrollY - scrollBarHeight) >= document.body.offsetHeight) {
       bike.classList.remove('animate');
