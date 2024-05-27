@@ -428,3 +428,12 @@ ul li {
 }
 
 }
+
+@media screen and (min-width: 830px) {
+  .hero {
+    width: calc(100vw - 190px);    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
