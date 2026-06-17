@@ -1,5 +1,5 @@
 body {
-  font-family: "roc-grotesk", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -9,6 +9,10 @@ body {
   background: #2E4EFF;
   padding-bottom: 12px;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "roc-grotesk", Arial, sans-serif;
 }
 
 .container {
@@ -302,7 +306,7 @@ p {
   text-align: left;
   padding: 16px;
   border-radius: 24px;
-  font-family: inherit;
+  font-family: "roc-grotesk", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.25;
   font-weight: 600;
