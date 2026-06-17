@@ -85,6 +85,10 @@ a:hover {
   scale: 1.15;
 }
 
+.header + .links {
+  margin-bottom: 48px;
+}
+
 .sublink a {
   display: flex;
   background: #ffffff00;
