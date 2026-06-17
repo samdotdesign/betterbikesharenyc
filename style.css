@@ -66,6 +66,7 @@ a:hover {
 
 .links a, .sublink a {
   cursor: pointer !important;
+  font-family: "roc-grotesk", Arial, sans-serif;
 }
 
 .links a {
